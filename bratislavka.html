@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRATISLAVKA</title>
+    <link rel="stylesheet" href="stylesforBratislavka.css">
+    <link rel="stylesheet" href="/client/chatbot/chatbot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickrdist/flatpickr.min.css">
+   
+    
+</head>
+<body>
+    
+
+  <div class="background-img">
+    <div class="overlay">
+      <header class="navbar">
+          <nav>
+              <ul>
+                  <li><a href="bratislavka.html">HOME</a></li>
+                  <li><a href="#promotions">PODUJATIA</a></li>
+                  <li><a href="#contact-section">KONTAKT</a></li>
+                  <li><a href="#menu-section">MENU</a></li>
+                  <li><a href="#aboutus-section">O NAS</a></li>
+                  <li><a href="rezervacia.html">REZERVACIA</a></li>
+              </ul>
+          </nav>
+      </header>
+      <section class="content-section">
+          <div class="icon-background">
+              <img src="pngegg (1).png" class="icon" alt="Icon">
+              <img src="pngegg (1).png" class="icon1" alt="Icon">
+              <img src="pngegg (1).png" class="icon2" alt="Icon"> 
+              <img src="pngegg (1).png" class="icon3" alt="Icon">
+              <img src="pngegg (1).png" class="icon4" alt="Icon">
+          </div>
+          <div class="welcome-text">Welcome to</div>
+          <div class="neon-text1">BRATISLAVKA</div>
+          <div class="welcome-text1">Coffee and beer: two pleasures, one address!</div>
+          <div style="display: flex; justify-content: center;">
+            <a href="#menu-section" style="text-decoration: none; margin-top: 10px;">
+                <button class="neon-text" style="width: 150px; height: 50px; font-size: 18px;margin-bottom: 200px; background: #de00cf81; color: #fff; box-shadow: 0 0 10px rgba(244, 177, 244, 0.7);">
+                    Menu
+                </button>
+            </a>
+        </div>
+        
+          <div class="content-section">
+              <div class="neon-text1"></div>
+             
+            <script src="bratislavka.js"></script>
+            <div id="menu-section" ></div>
+            
+            <h1  class="neon-text-for-section">MENU</h1>
+            <div class="table-container">
+                <table id="tasting-table" class="neon-table"  style="width: 50%;"   >
+                    <thead><tr></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <script src="bratislavka.js"></script>
+<h1 class="neon-text-for-section">BEER</h1>
+<div class="table-container">
+    <table id="beer-menu-1" class="neon-table-for-beer" style="width: 43%; margin-right: 4px;">
+        <thead>
+            <tr></tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <table id="beer-menu-2" class="neon-table-for-beer" style="width: 43%; margin-left: 4px;">
+        <thead>
+            <tr></tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<style>
+    .table-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; /* Чтобы элементы могли переноситься на следующую строку */
+        gap: 8px; /* Пробел между таблицами */
+    }
+    
+    .neon-table-for-beer {
+        width: 43%;
+        margin-right: 1px;
+        margin-left: 4px;
+        color: #fff;
+    background: rgba(0, 0, 0, 0.366);
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    }
+
+    /* Медиазапрос для мобильных устройств */
+  
+    @media (max-width: 608px) {
+        .table-container {
+            display: flex;
+            flex-direction: column; /* Располагаем таблицы вертикально */
+            gap: 10px; /* Добавляем отступы между таблицами */
+            width: 100%; /* Контейнер занимает всю ширину */
+            align-items: center; /* Центрируем таблицы */
+            padding: 0 20px; /* Увеличиваем отступы по бокам */
+            box-sizing: border-box; /* Учитываем отступы в ширине */
+        }
+    
+        .neon-table-for-beer {
+            width: 95%; /* Таблицы занимают 90% ширины контейнера */
+            margin: 0; /* Убираем отступы */
+            margin-bottom: 10px; /* Добавляем отступ между таблицами */
+            box-sizing: border-box; /* Учитываем padding и border в ширине */
+        }
+    
+        .neon-table-for-beer td {
+            padding: 8px; /* Увеличиваем padding для удобства */
+            border: 1px solid rgba(88, 11, 74, 0.722);
+            box-shadow: 0 0 8px rgba(139, 0, 139, 0.611), 0 0 20px rgba(115, 0, 115, 0.474), inset 0 0 12px rgba(104, 12, 95, 0.6);
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .neon-table-for-beer th:nth-child(1),
+        .neon-table-for-beer td:nth-child(1) {
+            width: 10%; /* Первый столбец */
+        }
+    
+        .neon-table-for-beer th:nth-child(2),
+        .neon-table-for-beer td:nth-child(2) {
+            width: 40%; /* Столбец для названия и описания */
+        }
+    
+        .neon-table-for-beer th:nth-child(3),
+        .neon-table-for-beer td:nth-child(3),
+        .neon-table-for-beer th:nth-child(4),
+        .neon-table-for-beer td:nth-child(4) {
+            width: 15%; /* Столбцы для объема и цены */
+        }
+    }
+    
+        
+</style>
+
+
+            <script src="bratislavka.js"></script>
+            <h1 class="neon-text-for-section">MIXED DRINKS</h1>
+            <div style="display: flex; justify-content: space-between; ">
+                    <table id="drink-menu" class="neon-table"  style="width: 50%;">
+                        <thead>
+                            <tr></tr></thead><tbody></tbody>
+                        </table>
+                </div>
+                
+                <script src="bratislavka.js"></script>
+                <h1  class="neon-text-for-section">WINE</h1>
+                <div style="display: flex; justify-content: space-between;">
+                        <table id="wine-table" class="neon-table" style="width: 50%; ">
+                        <thead>
+                            <tr></tr></thead><tbody> </tbody>
+                        </table>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <a href="ponukavin.html" style="text-decoration: none;">
+                        <button class="neon-text" style="width: 200px; height: 50px; font-size: 18px; background: #de00cf81; color: #fff; box-shadow: 0 0 10px rgba(244, 177, 244, 0.7);">
+                            Ponuka vin
+                        </button>
+                    </a>
+                </div>
+                
+                
+                <script src="bratislavka.js"></script>
+                <h1 class="neon-text-for-section">COFFEE</h1>
+                <div style="display: flex; justify-content: space-between;">
+                        <table id="coffee-table" class="neon-table" style="width: 50%; ">
+                        <thead>
+                            <tr></tr></thead><tbody> </tbody>
+                        </table>
+                </div>
+                <script src="bratislavka.js"></script>
+                <h1 class="neon-text-for-section">NON-ALCO DRINKS</h1>
+                <div style="display: flex; justify-content: space-between;">
+                        <table id="nealko-table" class="neon-table-for-snack" style="width: 50%;  ">
+                        <thead>
+                            <tr></tr></thead><tbody> </tbody>
+                        </table>
+                </div>
+                <script src="bratislavka.js"></script>
+                <h1 class="neon-text-for-section">Domace limonady - 0,5l/4,70€</h1>
+                <div style="display: flex; justify-content: space-between;">
+                    <table id="limonada-table" class="neon-table" style="width: 50%; text-align: center; ">
+                    <thead>
+                        <tr></tr><tr></tr><tr></tr></thead>
+                        <tbody> </tbody>
+                       
+                    </table>
+            </div>
+            <script src="bratislavka.js"></script>
+            <h1 class="neon-text-for-section">SNACKS</h1>
+            <div style="display: flex; justify-content: space-between;">
+                    <table id="snack-table" class="neon-table-for-snack" style="width: 50%;  ">
+                    <thead>
+                        <tr></tr></thead><tbody> </tbody>
+                    </table>
+            </div>
+ 
+          </div>
+          <h1 id="promotions" class="neon-text-for-section" style="margin-bottom: 80px;">PODUJATIA</h1>
+          <div class="widget-container">
+            <div class="widgets" id="widgetSlider">
+                <!-- Основные виджеты -->
+                <div class="widget">
+                    <img src="vinetastingochutnavka.jpg" alt="Image 1">
+                    <div class="text-overlay">
+                        <h2> <h2>OCHUTNAVKA VIN!!! <br> !!! 5.1.2025 !!! </h2></h2>
+                    </div>
+                </div>
+                <div class="widget">
+                    <img src="harryporterquiz.jpg" alt="Image 2">
+                    <div class="text-overlay">
+                        <h2>Harry Porter QUIZ<br> !!! 25.12.2024 !!!</h2>
+                    </div>
+                </div>
+                
+                <div class="widget">
+                    <img src="vinetastingochutnavka.jpg" alt="Image 3">
+                    <div class="text-overlay">
+                        <h2> <h2>OCHUTNAVKA VIN!!! <br> !!! 5.1.2025 !!! </h2></h2>
+                    </div>
+                </div>
+                <div class="widget">
+                    <img src="harryporterquiz.jpg" alt="Image 4">
+                    <div class="text-overlay">
+                        <h2>Harry Porter QUIZ<br> !!! 25.12.2024 !!!</h2>
+                    </div>
+                </div>
+                
+                <!-- Дублируем первые 3 виджета для плавного зацикливания -->
+                <div class="widget">
+                    <img src="vinetastingochutnavka.jpg" alt="Image 1">
+                    <div class="text-overlay">
+                        <h2>OCHUTNAVKA VIN!!! <br> !!! 5.1.2025 !!! </h2>
+                    </div>
+                </div>
+                <div class="widget">
+                    <img src="harryporterquiz.jpg" alt="Image 2">
+                    <div class="text-overlay">
+                        <h2>Harry Porter QUIZ<br> !!! 25.12.2024 !!!</h2>
+                    </div>
+                </div>
+                <div class="widget">
+                    <img src="vinetastingochutnavka.jpg" alt="Image 3">
+                    <div class="text-overlay">
+                        <h2>OCHUTNAVKA VIN!!! <br> !!! 5.1.2025 !!! </h2>
+                    </div>
+                </div>
+                
+                <div class="widget">
+                    <img src="harryporterquiz.jpg" alt="Image 4">
+                    <div class="text-overlay">
+                        <h2>Harry Porter QUIZ<br> !!! 25.12.2024 !!!</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow arrow-left" onclick="prevSlide()">&#9664;</div>
+        <div class="arrow arrow-right" onclick="nextSlide()">&#9654;</div>
+        </div>
+        <h1 class="neon-text-for-section" style="margin-bottom:150px ;"></h1>
+        <script>
+            let currentSlide = 0;
+            const widgets = document.querySelectorAll('.widget');
+            const widgetSlider = document.getElementById('widgetSlider');
+            const totalWidgets = widgets.length - 3;
+            let autoSlideInterval;
+    
+            function nextSlide() {
+                currentSlide++;
+                if (currentSlide >= totalWidgets) {
+                    widgetSlider.style.transition = 'none';
+                    currentSlide = 0;
+                    widgetSlider.style.transform = `translateX(0)`;
+                    
+                    setTimeout(() => {
+                        widgetSlider.style.transition = 'transform 1s ease';
+                        currentSlide++;
+                        widgetSlider.style.transform = `translateX(-${currentSlide * 40}%)`;
+                    }, 50);
+                } else {
+                    widgetSlider.style.transform = `translateX(-${currentSlide * 40}%)`;
+                }
+            }
+    
+            function prevSlide() {
+                currentSlide--;
+                if (currentSlide < 0) {
+                    widgetSlider.style.transition = 'none';
+                    currentSlide = totalWidgets - 1;
+                    widgetSlider.style.transform = `translateX(-${currentSlide * 50}%)`;
+                    
+                    setTimeout(() => {
+                        widgetSlider.style.transition = 'transform 1s ease';
+                        currentSlide--;
+                        widgetSlider.style.transform = `translateX(-${currentSlide * 50}%)`;
+                    }, 50);
+                } else {
+                    widgetSlider.style.transform = `translateX(-${currentSlide * 60}%)`;
+                }
+            }
+    
+            
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, 2500); // Интервал автоматического сдвига каждые 3 секунды
+            }
+    
+            // Запускаем автоматическую прокрутку при загрузке страницы
+            startAutoSlide();
+    
+    
+            function stopAutoSlide() {
+                clearInterval(autoSlideInterval);
+            }
+    
+            startAutoSlide();
+    
+            document.querySelector('.widget-container').addEventListener('mouseover', stopAutoSlide);
+            document.querySelector('.widget-container').addEventListener('mouseout', startAutoSlide);
+        </script>
+          <script>
+            const tablesData = {
+            
+          
+            wineTable: [
+              { name: "RED WINE", sizes: ["0,2l", "0,4l"], prices: ["3€", "5€"] },
+              { name: "WHITE WINE", sizes: ["0,2l", "0,4l"], prices: ["3€", "5€"] },
+            ],
+            coffeeTable: [
+              { name: "ESPRESSO", sizes: ["small", "large"], prices: ["1,5€", "2€"] },
+              { name: "LATTE", sizes: ["small", "large"], prices: ["2€", "3€"] },
+            ],
+          };
+          
+          // Функция для генерации строк таблицы
+          function generateTable(tableId, data) {
+            const table = document.getElementById(tableId);
+            data.forEach((item, index) => {
+              const row = document.createElement("tr");
+              row.innerHTML = `
+                <td><p style="margin: 0;"> ${item.name}</p></td>
+                <td style="text-align: center;">${item.sizes.join("<br>")}</td>
+                <td style="text-align: center;">${item.prices.join("<br>")}</td>
+                <td><p style="margin: 0;"> ${item.name}</p></td>
+                <td style="text-align: center;">${item.sizes.join("<br>")}</td>
+                <td style="text-align: center;">${item.prices.join("<br>")}</td>
+              `;
+              table.appendChild(row);
+            });
+          }
+          
+          // Генерация всех таблиц
+          Object.keys(tablesData).forEach(tableId => {
+            generateTable(tableId, tablesData[tableId]);
+          });
+          </script>
+      </section>
+      <!-- Контейнер для черного поля с горизонтальным расположением -->
+<div style="background-color: black; width: 100%;
+     color: white; padding: 30px 0; display: flex; justify-content: space-between; align-items: center;">
+       <!-- Часы работы -->
+    <div style="width: 20%; text-align: center;">
+        <h2 class="neon-text-for-section" style="margin: 0;">Open hours</h2>
+        <p>Po-Ut: 8:00 - 23:00</p>
+        <p>St-St: 8:00 - 23:00</p>
+        <p>Pi-Ne: 8:00 - 23:00</p>
+       
+    </div>
+
+   
+    <!-- Контактные данные -->
+    <div style="width: 15%; text-align: center;">
+        <h2 id="contact-section" class="neon-text-for-section" style="margin: 0;">Kontakt</h2>
+        <p>tel. +421 903 454 108</p>
+        <p>Email: your@gmail.com</p>
+    </div>
+
+    <!-- Адрес -->
+ 
+    <!-- Карта -->
+    <div style="width: 40%; text-align: center; margin-bottom: 50px;">
+        <h2 class="neon-text-for-section" style="margin: 0;">Address</h2>
+        <p>Ventúrska 265/9, 811 01 Staré Mesto</p>
+       
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12747.564643048346!2d27.561906234015137!3d53.897349269710074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c89306c604ba1:0xa3da4dc8ce6ec199!2z0JrRgNC10L3QvdCw0LTQu9Cw0LDQutCw0Y8sINCS0LjQvtGD0LrQv9Cw0YAsINCS0LjQvtC10YDQstCw0L0!5e0!3m2!1sru!2sby!4v1699419941170!5m2!1sru!2sby"
+                width="70%" height="200" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+</div>
+
+    </div>
+  </div>
+</body>
+</html>
